@@ -293,11 +293,11 @@ export default {
   },
   methods: {
     scrollParaEstaSecao () {
-      let hrefBkp = location.href
-      location.href = "#confOkEl"
-      this.$nextTick(() => {
-        location.href = hrefBkp
-      })
+      // let hrefBkp = location.href
+      // location.href = "#confOkEl"
+      // this.$nextTick(() => {
+      //   location.href = hrefBkp
+      // })
     },
     genPermalink () {
       function replacer(key, value) {
