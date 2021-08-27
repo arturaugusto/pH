@@ -29,10 +29,10 @@
 
     <h4 class="title is-4">Quais os dados do certificado dos MRCs a serem utilizados?</h4>
 
-    <div v-for="(mrc, mrc_i) in state.mrcs" :key="mrc_i">
+    <div v-for="(mrc, mrc_i) in state.mrcs" :key="mrc_i" v-bind:class="{'mt-5': mrc_i}">
       <div class="field is-grouped is-grouped-multiline">
         
-        <div class="field has-addons mr-2 mb-4">
+        <div class="field has-addons mr-2">
           <div class="control">
             <a class="button is-static">
               Valor
@@ -220,7 +220,7 @@
       </div>
     </div>
 
-    <p class="m-2"><strong>Ou QR-Code:</strong></p>
+    <p class="mt-6"><strong>Ou QR-Code:</strong></p>
     <div>
       <canvas ref="qrCodeCanvas"></canvas>
     </div>
